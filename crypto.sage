@@ -24,12 +24,13 @@ def my_xgcd(a, b):
 
 
 
-def my_pow(x,e, n=1):
+def my_pow(x,e, n=None):
+    assert n != 0, "mod cannot be 0"
     y = 1
     while (e != 0):
         if (e%2 == 1):
-            y = (x*y)%n if n!=1 else x*y
-        x = (x**2)%n if n!=1 else x**2
+            y = (x*y)%n if (n != None) else x*y
+        x = (x**2)%n if (n!= None) else x**2
         e = e//2
     return y
 
