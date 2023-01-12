@@ -34,6 +34,15 @@ def my_pow(x,e, n=None):
         e = e//2
     return y
 
+#assert my_pow(1,2,3) == pow(1,2,3)
+#assert my_pow(6,5,4) == pow(6,5,4)
+#assert my_pow(11,2) == pow(11,2)
+#assert my_pow(9,8) == pow(9,8)
+#assert my_pow(11,8,1) == pow(11,8,1)
+#assert my_pow(123,321,100) == pow(123,321,100)
+#assert my_pow(8,9,4) == pow(8,9,4)
+#assert my_pow(100,20,60) == pow(100,20,60)
+
 
 
 def my_is_prime(n):
